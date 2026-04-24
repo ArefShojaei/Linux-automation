@@ -56,31 +56,3 @@ class Curl < Request
     cmd.join(" ")
   end
 end
-
-
-class Wget < Request
-  private
-
-  def build_command(method, url, headers: {}, data: nil, json: nil)
-    case method
-    when "GET"
-      "wget '#{url}'"
-    else
-      # Wget فقط POST را پشتیبانی می‌کند — بقیه را شبیه‌سازی می‌کنیم
-      cmd = ["wget --method=#{method} '#{url}'"]
-
-      headers.each do |k, v|
-        cmd << "--header='#{k}: #{v}'"
-      end
-
-      if json
-        cmd << "--header='Content-Type: application/json'"
-        cmd << "--body-data='#{json.to_json}'"
-      elsif data
-        cmd << "--body-data='#{data}'"
-      end
-
-      cmd.join(" ")
-    end
-  end
-end

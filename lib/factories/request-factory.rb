@@ -3,7 +3,6 @@ require_relative "../resources/request.rb"
 class RequestFactory
     ADAPTORS = {
         curl: Curl,
-        wget: Wget
     }
 
     def self.create(type)
