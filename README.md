@@ -13,6 +13,7 @@ This DSL allows you to define custom configuration in a clean, human‑friendly 
 - Shell and system command execution
 
 ## Quick Example
+> main.rb
 ```ruby
 require_relative "./lib/dsl/task.rb"
 
@@ -40,6 +41,26 @@ task "Install-basic-tools" do
 end
 ```
 
+## How to use it?
+> 1: Clone this repository
+```bash
+git clone https://github.com/ArefShojaei/Linux-automation.git
+```
+
+> 2: Enter to the package folder
+```bash
+cd Linux-automation
+```
+
+> 3: Make "main.rb" file
+```bash
+touch main.rb
+```
+
+> 4: Put the Quick example & Run the script
+```bash
+ruby main.rb
+```
 ## Guide
 > Task
 
