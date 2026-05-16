@@ -1,3 +1,5 @@
+<img width="1200" height="900" alt="Ruby" src="https://github.com/user-attachments/assets/effa5f51-1864-4fd0-ba5b-be0267f2db80" />
+
 # Linux Automation
 A simple, powerful, and extensible **Domain‑Specific Language for Linux task**, written in Ruby.  
 This DSL allows you to define custom configuration in a clean, human‑friendly syntax and automatically translate them into real Linux commands.
